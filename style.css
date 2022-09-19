@@ -16,9 +16,67 @@ body{
 
 .calculator{
     width: 300px;
-    height: 400px;
+    height: 500px;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
     background-color: #22252d;
     overflow: hidden;
+}
+
+form input{
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: rgb(44, 44, 44);
+    text-align: right;
+    border: none;
+    pointer-events: none;
+}   
+
+button{
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border:  1px solid #000;
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px;
+}
+
+.btn-yellow{
+    background-color: rgb(245, 145, 62);
+    color: #fff;
+}
+
+.btn-yellow:hover{
+    background-color: rgb(255, 152, 68);
+}
+
+.btn-grey{
+    background-color: rgb(224, 224, 224);
+}
+
+.btn-grey:hover{
+    background-color: rgb(255, 251, 251);
+}
+
+.btn-equal{
+    background-color: green;
+}
+
+.btn-clear{
+    background-color: red;
 }
